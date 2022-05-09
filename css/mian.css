@@ -1,0 +1,112 @@
+:root{
+    --orange: #d95550;
+    --lightOragne: #dd6662;
+    --veryLightOrange: #f89e8b;
+    --gray: #55557b;
+    --white: #fff;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--orange);
+}
+/* .logo{
+    width: 300px;
+    position: absolute;
+    top: 0px;
+    right: 30px;
+
+} */
+
+h1{
+    margin-top:200px;
+    color: var(--white);
+    text-align: center;
+}
+
+form{
+    width: 400px;
+    margin: 45px auto;
+    text-align: center;
+}
+
+form input[type="text"] {
+    background-color: var(--orange);
+    color: var(--white);
+    border-style: none;
+    font-size: 1.5em;
+}
+
+form input[type="text"]::placeholder{
+    color: var(--veryLightOrange);
+}
+
+form input[type="text"]:focus{
+    outline: none;
+}
+
+form input[type="submit"]{
+    font-size: 2em;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-style: none;
+    color: var(--orange);
+}
+
+form input[type="submit"]:hover{
+    background-color: var(--veryLightOrange);
+    cursor: pointer;
+    color: var(--white);
+}
+.list-container{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.task-container{
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    border-radius: 4px;
+    padding: 16px;
+    color: var(--gray);
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+
+/* Clases para cambiar el drag and drop */
+
+.task-container.seleccionado{
+    transform: scale(1.02) rotate(-1deg);
+    background-color: var(--veryLightOrange);
+}
+
+/* ---------------------- */
+
+.task-container label input{
+    margin-right: 10px;
+}
+
+.closeBtn{
+    width: 15px;
+    height: 15px;
+}
+
+.closeBtn:hover{
+    cursor: pointer;
+}
+
+#stats{
+    margin: 25px 0 50px;
+    color: #ffe5d2;
+    text-align: center;
+    font-size: 1.3em;
+}

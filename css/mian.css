@@ -1,7 +1,6 @@
 :root{
-    --orange: #d95550;
-    --lightOragne: #dd6662;
-    --veryLightOrange: #f89e8b;
+    --backgroundBlue: #009DCF;
+    --veryLightBlue: #88E2FF;
     --gray: #55557b;
     --white: #fff;
 
@@ -13,7 +12,7 @@
 }
 
 body{
-    background-color: var(--orange);
+    background-color: var(--backgroundBlue);
 }
 /* .logo{
     width: 300px;
@@ -36,14 +35,14 @@ form{
 }
 
 form input[type="text"] {
-    background-color: var(--orange);
+    background-color: var(--backgroundBlue);
     color: var(--white);
     border-style: none;
     font-size: 1.5em;
 }
 
 form input[type="text"]::placeholder{
-    color: var(--veryLightOrange);
+    color: var(--veryLightBlue);
 }
 
 form input[type="text"]:focus{
@@ -56,11 +55,11 @@ form input[type="submit"]{
     height: 40px;
     border-radius: 50%;
     border-style: none;
-    color: var(--orange);
+    color: var(--backgroundBlue);
 }
 
 form input[type="submit"]:hover{
-    background-color: var(--veryLightOrange);
+    background-color: var(--veryLightBlue);
     cursor: pointer;
     color: var(--white);
 }
@@ -86,7 +85,7 @@ form input[type="submit"]:hover{
 
 .task-container.seleccionado{
     transform: scale(1.02) rotate(-1deg);
-    background-color: var(--veryLightOrange);
+    background-color: var(--veryLightBlue);
 }
 
 /* ---------------------- */

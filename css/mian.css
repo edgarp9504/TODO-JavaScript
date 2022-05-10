@@ -14,13 +14,7 @@
 body{
     background-color: var(--backgroundBlue);
 }
-/* .logo{
-    width: 300px;
-    position: absolute;
-    top: 0px;
-    right: 30px;
 
-} */
 
 h1{
     margin-top:200px;
@@ -29,16 +23,19 @@ h1{
 }
 
 form{
-    width: 400px;
-    margin: 45px auto;
+
+    /* margin: 45px auto; */
     text-align: center;
 }
 
 form input[type="text"] {
+
     background-color: var(--backgroundBlue);
+    width: 400px;
+    height: 100px;
     color: var(--white);
     border-style: none;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 form input[type="text"]::placeholder{
@@ -64,8 +61,9 @@ form input[type="submit"]:hover{
     color: var(--white);
 }
 .list-container{
-    width: 600px;
+    width: 50%;
     margin: 0 auto;
+    margin-top: 40px;
 }
 
 .task-container{
@@ -101,6 +99,7 @@ form input[type="submit"]:hover{
 
 .closeBtn:hover{
     cursor: pointer;
+    transform: scale(1.5);
 }
 
 #stats{
